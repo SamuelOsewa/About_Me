@@ -9,10 +9,34 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id = "@+id/name_text"
+        android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text = "Osewa Ayomide Samuel"
+        android:text="@string/osewa_ayomide_samuel"
+        android:textAlignment="center"
+        style="@style/NameStyle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/small_padding"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <TextView
+           android:id = "@+id/long_bio"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/NameStyle"
+           android:text = "@string/bio_about_self"
+           android:lineSpacingMultiplier="1.2"/>
+
+
+    </ScrollView>
 
 
 </LinearLayout>
